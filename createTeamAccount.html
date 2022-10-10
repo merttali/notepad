@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- todo.css -->
+    <link rel="stylesheet" href="todo.css">
+    <!-- todo.js -->
+    <script src="todo.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Create A Team Account</title>
+</head>
+<body class="logInBody" id="creatTeamBody">
+    <div class="navbar">
+        <a style="color: rgb(0, 94, 177);" href="HomePage.html"><h3 class="brand">NOTEPAD</h3></a>
+        <div style="float: right; margin-right: 20px;">
+            <a href="Welcome.html" class="navigations">Log In</a>
+            <a href="userGuide.html" class="navigations">User Guide</a>
+        </div>
+    </div>
+    
+    <center>
+        <div class="loginBox" style=" border: 2px solid rgba(0, 0, 0, 0); width: 766px;">
+            <div class="loginTop" style="margin-left: -1px;">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input onclick="loginPage()" type="radio" class="btn-check loginTop" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label  class="btn btn-outline-primary loginTop" for="btnradio1">PREMIUM</label>
+                    <input onclick="signupPage()" type="radio" class="btn-check loginTop" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-danger loginTop" for="btnradio2">FREE</label>
+                </div>
+            </div>
+            <div class="loginSide" id="loginPage" >
+                <div class="signUpLeft">
+                    <p>Team Name</p>
+                    <input type="text" class="loginInput"> <br><br>
+                    
+                    <p>Join Password</p>
+                    <input type="text" class="loginInput"> <br><br>
+
+                    <p>Recovery Email</p>
+                    <input type="text" class="loginInput"> <br><br>
+
+                    <p>Recovery Phone Number</p>
+                    <input type="text" class="loginInput"> <br><br>
+                </div>
+                <div class="signUpRight">
+                    <p>Owner Admin User Id</p>
+                    <input type="text" class="loginInput"> <br><br>
+
+                    <p>Owner Admin User Name</p>
+                    <input type="password" class="loginInput"> <br><br>
+
+                    <p>Owner Admin Password</p>
+                    <input type="password" class="loginInput"> <br><br>
+
+                    <p>Second Admin User Name (Not Required)</p>
+                    <input type="text" class="loginInput"> <br><br>
+                </div>
+                <button class="btn btn-primary" style="margin-top: 15px;">Sign Up</button>
+            </div>
+
+            <div class="signUpSide" id="signupPage">
+                <div class="signUpLeft">
+                    <p>Team Name</p>
+                    <input type="text" class="loginInput red"> <br><br>
+                    
+                    <p>Join Password</p>
+                    <input type="text" class="loginInput red"> <br><br>
+
+                    <p>Recovery Email</p>
+                    <input type="text" class="loginInput red"> <br><br>
+
+                    <p>Recovery Phone Number</p>
+                    <input type="text" class="loginInput red"> <br><br>
+                </div>
+                <div class="signUpRight">
+                    <p>Owner Admin User Id</p>
+                    <input type="text" class="loginInput red"> <br><br>
+
+                    <p>Owner Admin User Name</p>
+                    <input type="password" class="loginInput red"> <br><br>
+
+                    <p>Owner Admin Password</p>
+                    <input type="password" class="loginInput red"> <br><br>
+
+                    <p>Second Admin User Name (Not Required)</p>
+                    <input type="text" class="loginInput red"> <br><br>
+                </div>
+                <button class="btn btn-danger" style="margin-top: 15px;">Sign Up</button>
+            </div>
+        </div>    
+
+    </center>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- todo.css -->
+    <link rel="stylesheet" href="todo.css">
+    <!-- todo.js -->
+    <script src="todo.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Teams</title>
+</head>
+<body style="width: 100%; user-select: none;">
+    <div class="navbar">
+        <a style="color: rgb(0, 94, 177);" href="HomePage.html"><h3 class="brand">NOTEPAD</h3></a>
+        <div style="float: right; margin-right: 20px;">
+            <a href="" class="navigations">Log Out</a>
+            <a href="userGuide.html" class="navigations">User Guide</a>
+            <a href="" class="navigations">My Account</a>
+        </div>
+    </div>
+    <div class="taskListBox">
+        
+        <center style="font-weight: bold; font-size: large; color:rgb(165, 170, 175);">TEAMS</center>
+        <br>
+        
+        <input id="newTaskName" class="input" type="text" placeholder="Search" style="width: 99%;"><a class="btn btn-primary" style="margin-left: -16%; margin-top: -5px; border-radius: 0px 5px 5px 0px;" >Search</a>
+        <br><br>
+        <div class="taskList">
+            <ul id="ulTasks" class="list-group">
+                <li id="task0" onclick="openTask('0')" class="list-group-item">NET EBYS<a id="delN0001" class="toDo">x</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="textArea">
+        <center>
+            <p id="taskName">NET EBYS</p>
+            
+            <div style="color: rgb(0, 94, 177); float: left; text-align: left; width: 45%; height: 100%; padding: 5px;">
+                Owner: <a style="color: black;" href="">Owner Name</a> <br><br>
+                Admin: <a style="color: black;" href="">Admin</a> <br><br>
+                Members:<br><br>
+                <ul>
+                    <div class="taskList" style="height: 350px; width: 80%; margin-left: -30px;">
+                        <ul id="ulTasks" class="list-group">
+                            <li id="" onclick="" class="list-group-item">NET EBYS<a id="" class="toDo"><i src=""></i></a></li>
+                        </ul>
+                    </div>                  
+                </ul>
+            </div>
+
+            <div style="color: rgb(0, 94, 177); float: left; text-align: left; width: 45%; height: 50%; padding: 5px;">
+                <input type="checkbox" name="mute" id=""> Mute <br><br>
+                Tasks : <a href="">50</a>
+            </div>
+            
+            <br>
+            <button onclick="delElement" class="btn btn-outline-danger" style="position: absolute; right: 2%; bottom: 2%;">❌ Leave</button>
+        </center>
+    </div>
+
+
+</body>
+</html>

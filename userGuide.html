@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- todo.css -->
+    <link rel="stylesheet" href="todo.css">
+    <!-- todo.js -->
+    <script src="todo.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>NOTEPAD</title>
+</head>
+<body class="logInBody" style="background: white;">
+    <div class="navbar">
+        <a style="color: rgb(0, 94, 177);" href="HomePage.html"><h3 class="brand">NOTEPAD</h3></a>
+        <div style="float: right; margin-right: 20px;">
+            <a href="Welcome.html" class="navigations">Log In</a>
+            <a href="newTeamAccount.html" class="navigations">Support Us</a>
+        </div>
+    </div>
+    
+    <center>
+
+        <div style="background-color: rgb(205, 232, 255); width: 80%; height: 200vh; margin:20px; border-radius: 20px; padding: 20px; color: rgb(0, 94, 177); font-family: Arial, Helvetica, sans-serif; ">
+            <h2>User Guide</h2> <br>
+
+            <div class="taskListBox" style="float: left;">
+        
+                <center style="font-weight: bold; font-size: large; color:rgb(165, 170, 175);">TO DO LIST</center>
+                <br>
+                
+                <input id="newTaskName" class="input" type="text" placeholder="Add New Task">
+                <button onclick="addTask()" class="btn btn-primary add">+</button>
+                <button onclick="delAll()" class="btn btn-danger deleteAll">Delete All</button>
+        
+        
+                <br><br>
+                <b style="color: rgb(165, 170, 175); font-size: medium;">TASKS</b>
+                <div class="taskList">
+                    <ul id="ulTasks" class="list-group">
+                        <li id="task${TaskId}" onclick="openTask('${TaskId}')" class="list-group-item">Example<a onclick="delElement('${TaskId}')" id="del${TaskId}" class="toDo">x</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="float: right; width: 65%; padding-right: 20px;">
+                <p style="text-align: justify;">
+                    <b>Add New Task</b><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia autem corporis, error iure ipsam alias ea voluptate maxime. Perferendis soluta perspiciatis quaerat beatae in, nesciunt quae neque enim itaque.
+                    <br><br><br>
+                    <b>Delete A Task</b><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia autem corporis, error iure ipsam alias ea voluptate maxime. Perferendis soluta perspiciatis quaerat beatae in, nesciunt quae neque enim itaque.
+                    <br><br><br>
+                    <b>Delete All Task</b><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia autem corporis, error iure ipsam alias ea voluptate maxime. Perferendis soluta perspiciatis quaerat beatae in, nesciunt quae neque enim itaque.
+
+                <br><br><br>
+                    <b>Open The Task</b><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia autem corporis, error iure ipsam alias ea voluptate maxime. Perferendis soluta perspiciatis quaerat beatae in, nesciunt quae neque enim itaque.
+                
+                </p>
+            </div>
+
+            <div class="textArea" style="width: 500px; height: 500px; position: absolute; top: 120%; left: 11%;">
+                <center>
+                    <p id="taskName">Example<a class="edit" onclick="editName()">✒️</a></p>
+                    <textarea name="todo1" id="" style="width: 400px; height: 50vh;" aria-valuenow="Write Somethink"></textarea> <br>
+                    <button onclick="delElement" class="btn btn-outline-danger">❌ Delete</button>
+                    <button class="btn btn-outline-primary">💾 Save</button>
+                </center>
+            </div>
+            <br>
+            <div style="float: right; width: 50%; padding-right: 20px;">
+                <p style="text-align: justify; padding-top: 100px;">
+                    <b>Change The Task Title</b><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia autem corporis, error iure ipsam alias ea voluptate maxime. Perferendis soluta perspiciatis quaerat beatae in, nesciunt quae neque enim itaque.
+                    <br><br><br>
+                    
+                    <b>Write Someting The Task</b><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia autem corporis, error iure ipsam alias ea voluptate maxime. Perferendis soluta perspiciatis quaerat beatae in, nesciunt quae neque enim itaque.
+                    <br><br><br>
+                    
+                    <b>Delete The Task's Inside</b><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia autem corporis, error iure ipsam alias ea voluptate maxime. Perferendis soluta perspiciatis quaerat beatae in, nesciunt quae neque enim itaque.
+
+                <br><br><br>
+                    <b>Save The Task's Inside</b><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia autem corporis, error iure ipsam alias ea voluptate maxime. Perferendis soluta perspiciatis quaerat beatae in, nesciunt quae neque enim itaque.
+                </p>
+            </div>
+
+            <br>
+
+        </div>
+
+    </center>
+
+
+</body>
+</html>

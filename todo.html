@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- todo.css -->
+    <link rel="stylesheet" href="todo.css">
+    <!-- todo.js -->
+    <script src="todo.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>To Do List</title>
+</head>
+<body style="width: 100%; user-select: none;">
+    <div class="navbar">
+        <a style="color: rgb(0, 94, 177);" href="HomePage.html"><h3 class="brand">NOTEPAD</h3></a>
+        <div style="float: right; margin-right: 20px;">
+            <a href="" class="navigations">Log Out</a>
+            <a href="userGuide.html" class="navigations">User Guide</a>
+            <a href="" class="navigations">My Account</a>
+        </div>
+    </div>
+    <div class="taskListBox">
+        
+        <center style="font-weight: bold; font-size: large; color:rgb(165, 170, 175);">TO DO LIST</center>
+        <br>
+        
+        <input id="newTaskName" class="input" type="text" placeholder="Add New Task">
+        <button onclick="addTask()" class="btn btn-primary add">+</button>
+        <button onclick="delAll()" class="btn btn-danger deleteAll">Delete All</button>
+
+
+        <br><br>
+        <b style="color: rgb(165, 170, 175); font-size: medium;">TASKS</b>
+        <div class="taskList">
+            <ul id="ulTasks" class="list-group">
+                <li id="task0" onclick="selectTask(0)" class="list-group-item">Example<a onclick="delElement('0')" id="del0" class="toDo">x</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="textArea">
+        <center>
+            <p id="taskName">Example<a class="edit" onclick="editName()">✒️</a></p>
+            <textarea name="todo1" id="textArea" style="width: 900px; height: 70vh;"></textarea> <br>
+            <button onclick="delElement" class="btn btn-outline-danger">❌ Delete</button>
+            <button class="btn btn-outline-primary">💾 Save</button>
+        </center>
+    </div>
+
+
+</body>
+</html>

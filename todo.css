@@ -1,0 +1,252 @@
+a{
+    text-decoration: none;
+}
+
+.createTeamButton:hover{
+    box-shadow: 0px 0px 20px white;
+    font-weight: normal;
+}
+
+.brand:hover {
+    color: rgb(0, 94, 177);
+    text-shadow: 0px 0px 5px rgba(78, 166, 243, 0.363);
+}
+
+.brand:active {
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    padding-left: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0px;
+    color: rgb(0, 94, 177);
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.navigations {
+    color: rgb(0, 94, 177);
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.navigations:hover {
+    color: rgb(0, 94, 177);
+    border-bottom: 3px solid rgb(0, 94, 177);
+}
+
+.navigations:active {
+    color: white;
+    background-color: rgb(0, 94, 177);
+}
+
+.logInBody {
+    background: linear-gradient(to right, #0099ff 0%, #33ccff 80%);
+    width: 100%; user-select: none;
+    
+}
+
+.loginBox {
+    background-color: rgb(238, 238, 238);
+    width: 768px;
+    height: 500px;
+    margin-top: 7%;
+    border:3px solid #0099ff;
+    box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.219);
+}
+
+.loginTop {
+    margin-top: -2px;
+    width: 383px;
+    height: 50px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px 5px 0px 0px;
+    float: left;
+}
+
+.loginInput{
+    width: 50%;
+    border: none;
+    background-color: rgb(237, 237, 237);
+    border-bottom:3px solid #0099ff;
+}
+
+.red{
+    border-bottom: 3px solid red;
+}
+
+.loginSide{
+    display:block; /*Will Be Block by Click*/
+    transition: 10s;
+}
+
+.signUpSide{
+    display: none;
+}
+
+.signUpLeft{
+    position: relative;
+    width: 50%;
+    height: 380px;
+    background-color: rgba(137, 43, 226, 0);
+    float: left;
+    padding: 10px;
+}
+
+.signUpRight{
+    position: relative;
+    width: 50%;
+    height: 380px;
+    background-color: rgba(137, 43, 226, 0);
+    float: right;
+    padding: 10px;
+}
+
+.teamPacket{
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+div {
+    border-radius: 5px;
+}
+
+.taskListBox {
+    width: 30%;
+    margin: 1%;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid rgb(33, 148, 248);
+    height: 85vh;
+}
+
+.toDo {
+    float: right;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    user-select: none;
+    text-decoration: none;
+}
+
+.toDo:hover {
+    color: red;
+}
+
+.toDo:active {
+    color: rgb(0, 136, 255);
+}
+
+.input {
+    height: 39px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 110, 255);
+}
+
+.add {
+    margin-left: -41px;
+    margin-top: -5px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.deleteAll {
+    float: right;
+    margin-top: 1px;
+}
+
+li:hover {
+    background-color: rgba(0, 153, 255, 0.212);
+}
+
+.textArea {
+    width: 66%;
+    margin: 1%;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid rgb(33, 148, 248);
+    height: 85vh;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    padding: 20px;
+}
+
+#taskNameInput {
+    height: 25px;
+    margin: 0px;
+    background-color: aliceblue;
+    border: none;
+    border-bottom: 2px solid rgb(228, 213, 0);
+}
+
+.textBox {
+    background-color: white;
+    width: 95rem;
+    height: 60vh;
+}
+
+.edit {
+    text-decoration: none;
+}
+
+.edit:hover {
+    border-radius: 25px;
+    background-color: rgb(78, 166, 243);
+    text-decoration: none;
+}
+
+.edit:active {
+    border-radius: 25px;
+    background-color: rgb(33, 148, 248);
+    text-decoration: none;
+}
+
+.editNameInputButton {
+    height: 30px;
+    font-size: small;
+    padding-top: 5px;
+    margin-top: -6px;
+    margin-left: -5px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.taskList {
+    height: 29rem;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 0.5px solid rgb(0, 136, 255);
+    background-color: rgb(238, 238, 238);
+}
+
+.taskList::-webkit-scrollbar {
+    background-color: rgb(80, 80, 80);
+    border-radius: 0px 5px 5px 0px;
+    width: 10px;
+}
+
+.taskList::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 136, 255);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.member{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-left: 2px rgba(0, 0, 0, 0) solid;
+}
+
+.member:hover{
+    border-left: 2px black solid;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
